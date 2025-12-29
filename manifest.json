@@ -1,12 +1,10 @@
 {
   "name": "Advanced Calculator",
-  "short_name": "Calculator",
-  "description": "Advanced moisture and mix calculator",
+  "short_name": "Advanced Calculator",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#fbbf24",
-  "orientation": "portrait",
+  "theme_color": "#f59e0b",
   "icons": [
     {
       "src": "icon-192.png",
