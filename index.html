@@ -80,24 +80,26 @@ input::-webkit-inner-spin-button {
     <h2 class="text-lg font-bold text-amber-700 mb-4">Food Tool</h2>
 
     <table class="w-full text-sm">
-      <tr class="border-b">
-        <td class="py-2 font-semibold">Total</td>
-        <td>
-          <input id="foodTotal" type="number"
-            class="w-full border border-amber-300 rounded-lg p-2 font-semibold"
-            oninput="calcFood()">
-        </td>
-      </tr>
+      <tbody class="divide-y">
+        <tr>
+          <td class="py-2 font-semibold">Total</td>
+          <td>
+            <input id="foodTotal" type="number"
+              class="w-full border border-amber-300 rounded-lg p-2 font-semibold"
+              oninput="calcFood()">
+          </td>
+        </tr>
 
-      <tr class="border-b">
-        <td class="py-2 font-semibold">Rgs</td>
-        <td><input id="foodRgs" readonly class="readonlyBox"></td>
-      </tr>
+        <tr>
+          <td class="py-2 font-semibold">Rgs</td>
+          <td><input id="foodRgs" readonly class="readonlyBox"></td>
+        </tr>
 
-      <tr>
-        <td class="py-2 font-semibold">Water</td>
-        <td><input id="foodWater" readonly class="readonlyBox"></td>
-      </tr>
+        <tr>
+          <td class="py-2 font-semibold">Water</td>
+          <td><input id="foodWater" readonly class="readonlyBox"></td>
+        </tr>
+      </tbody>
     </table>
 
     <button onclick="resetFood()"
@@ -123,13 +125,40 @@ input::-webkit-inner-spin-button {
           </td>
         </tr>
 
-        <tr><td>Honey</td><td><input id="honey" readonly class="readonlyBox"></td></tr>
-        <tr><td>Water</td><td><input id="water" readonly class="readonlyBox"></td></tr>
-        <tr><td>Yeast</td><td><input id="yeast" readonly class="readonlyBox"></td></tr>
-        <tr><td>Milk</td><td><input id="milk" readonly class="readonlyBox"></td></tr>
-        <tr><td>Soya</td><td><input id="soya" readonly class="readonlyBox"></td></tr>
-        <tr><td>Sundal</td><td><input id="sundal" readonly class="readonlyBox"></td></tr>
-        <tr><td>Temp</td><td><input value="90 °C" readonly class="readonlyBox"></td></tr>
+        <tr>
+          <td class="py-2 font-semibold">Honey</td>
+          <td><input id="honey" readonly class="readonlyBox"></td>
+        </tr>
+
+        <tr>
+          <td class="py-2 font-semibold">Water</td>
+          <td><input id="water" readonly class="readonlyBox"></td>
+        </tr>
+
+        <tr>
+          <td class="py-2 font-semibold">Yeast</td>
+          <td><input id="yeast" readonly class="readonlyBox"></td>
+        </tr>
+
+        <tr>
+          <td class="py-2 font-semibold">Milk</td>
+          <td><input id="milk" readonly class="readonlyBox"></td>
+        </tr>
+
+        <tr>
+          <td class="py-2 font-semibold">Soya</td>
+          <td><input id="soya" readonly class="readonlyBox"></td>
+        </tr>
+
+        <tr>
+          <td class="py-2 font-semibold">Sundal</td>
+          <td><input id="sundal" readonly class="readonlyBox"></td>
+        </tr>
+
+        <tr>
+          <td class="py-2 font-semibold">Temp</td>
+          <td><input value="90 °C" readonly class="readonlyBox"></td>
+        </tr>
       </tbody>
     </table>
 
