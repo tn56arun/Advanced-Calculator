@@ -13,7 +13,7 @@
 <!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Icons -->
+<!-- Icons (still kept if you need later, but icon removed from UI) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -50,9 +50,8 @@ input::-webkit-inner-spin-button {
 
 <body class="bg-white min-h-screen flex flex-col">
 
-<!-- HEADER -->
+<!-- HEADER (ICON REMOVED) -->
 <div class="flex items-center justify-center mb-6 mt-4">
-  <i class="fas fa-calculator text-amber-500 text-4xl mr-3"></i>
   <h1 class="text-2xl md:text-4xl font-bold text-amber-800">
     Advanced Calculator
   </h1>
@@ -200,7 +199,7 @@ function showPatty() {
 function calcFood() {
   let t = parseFloat(foodTotal.value);
   if (!isNaN(t)) {
-    let v = (t / 1.6).toFixed(2);
+    let v = (t / 1.6).toFixed(3);
     foodRgs.value = v;
     foodWater.value = v;
   }
@@ -216,12 +215,12 @@ function resetFood() {
 function calcPatty() {
   let g = parseFloat(grs.value);
   if (!isNaN(g)) {
-    honey.value  = (g * 0.088).toFixed(2);
-    water.value  = (g * 0.177).toFixed(2);
-    yeast.value  = (g * 0.008).toFixed(2);
-    milk.value   = (g * 0.011).toFixed(2);
-    soya.value   = (g * 0.017).toFixed(2);
-    sundal.value = (g * 0.017).toFixed(2);
+    honey.value  = (g * 0.088).toFixed(3);
+    water.value  = (g * 0.177).toFixed(3);
+    yeast.value  = (g * 0.008).toFixed(3);
+    milk.value   = (g * 0.011).toFixed(3);
+    soya.value   = (g * 0.017).toFixed(3);
+    sundal.value = (g * 0.017).toFixed(3);
   }
 }
 
